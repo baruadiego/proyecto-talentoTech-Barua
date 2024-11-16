@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.navegacion-principal{
+    background-color: rgb(70, 69, 69);
+}
+.enlaces{
+    @include m.contenedor;
+    @include m.tablet{
+        display: flex;
+        justify-content: center;
+        a{
+            display: inline;
+        }
+    }
+    
+    a{
+        display: block;
+        color: v.$blanco;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem;
+        &:hover{
+            color: v.$amarillo;
+        }
+    }
+}

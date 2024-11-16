@@ -1,0 +1,64 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.search-bar{
+    background-color: rgb(37, 37, 37);
+    padding: 2rem 0;
+
+}
+
+.search-grid {
+  @include m.contenedor;
+  @include m.grid(2, 0);
+  max-width: 80%;
+
+  .barra {
+      margin-top: 1rem;
+      width: 100%;
+      padding: .8rem 0;
+      background-color: rgb(70, 69, 69);
+      display: flex;
+      justify-content: end;
+      justify-self: center;
+      grid-area: 2/1/2/3;
+      
+      svg {
+          margin-right: 2rem;
+        }
+    }
+
+    .iconos-search{
+        justify-self: end;
+    }
+
+    @include m.tablet {
+        @include m.grid(3, 0);
+        
+        .barra {
+            margin-top: 0;
+            width: 100%;
+            display: flex;
+            grid-area: 1/2/1/3;
+            svg {
+                margin-right: 2rem;
+            }
+        }
+  
+        .iconos-search {
+            justify-self: end;
+        }
+  
+        svg {
+            justify-self: unset;
+        }
+  
+        .iconos-search,
+        svg {
+            align-self: center;
+        }
+  
+        .iconos-search{
+            grid-area: 1/3/1/4;
+        }
+    }
+}

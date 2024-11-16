@@ -1,0 +1,110 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-principal{
+    @include m.contenedor;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: grid;
+    
+
+    aside{
+        background-color: v.$blanco;
+        max-height: fit-content;
+        height: fit-content;
+        margin: 0 1rem;
+
+        h4{
+            text-align: center;
+            font-size: 1.5rem;
+            margin: auto;
+            margin-bottom: 1rem;
+            padding: 1.4rem;
+            border-bottom: 0.5px solid rgb(206, 206, 206);
+        }
+        
+        label{
+            font-size: 1.4rem;
+            color: rgb(97, 97, 97);
+            padding-left: 1.4rem;
+            display: inline-block;
+            input{
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+        }
+    }
+
+    .productos{
+        
+        @include m.tablet{
+            @include m.grid(2, 1.5rem);
+        }
+
+        @include m.desktop{
+            @include m.grid(4, 1.5rem);
+        }
+        
+        .producto{
+            background-color: v.$blanco;
+            margin: 1.4rem 1rem;
+        }
+        .detalle{
+            padding: 1rem 1rem  0 1rem;
+            .marca{
+                height: 2.5rem;
+                width: 4.5rem;
+            }
+            p{
+                margin: .5rem 0;
+                font-size: 1.8rem;
+            }
+            .nombre{
+                color:rgb(94, 94, 94);
+            }
+            .precio, .cuotas, .envio{
+                font-weight: 700;
+            }
+            .cuotas{
+                font-size: 1.4rem;
+            }
+            span{
+                font-weight: 400;
+            }
+            .envio{
+                font-size: 1.5rem;
+                color: rgb(223, 134, 0);
+                
+            }
+        }
+    }
+
+    @include m.tablet{
+        grid-template-columns: 2fr 5fr;
+        gap: 1rem;
+        
+        .productos{
+            .producto{
+                margin: 0;
+            }
+            .aside{
+                margin: 0;
+            }
+        }
+
+        aside{
+            h4{
+                text-align: left;
+            }
+            label{
+                display: block;
+            }
+        }
+    }
+
+    @include m.desktop{
+        grid-template-columns: 1fr 5fr;
+        gap: 1rem;
+    }
+}

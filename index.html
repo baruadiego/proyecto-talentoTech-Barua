@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <p>ENVÍO GRATIS CON COMPRAS SUPERIORES A $119.999 -</p>
+            <p>12 CUOTAS SIN INTERÉS</p>
+        </div>
+    </header>
+
+    <div class="search-bar">
+
+        
+        <div class="search-grid">
+            <svg class ="logo_principal" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104.133" height="31.166" viewBox="0 0 104.133 31.166">
+                <defs>
+                    <clipPath id="clip-path">
+                        <rect id="Rectángulo_5652" data-name="Rectángulo 5652" width="104.133" height="31.166" fill="#fbc827"/>
+                    </clipPath>
+                </defs>
+                <g id="Grupo_18553" data-name="Grupo 18553" transform="translate(0 0)">
+                    <g id="Grupo_18532" data-name="Grupo 18532" transform="translate(0 0)" clip-path="url(#clip-path)">
+                        <path id="Trazado_61820" data-name="Trazado 61820" d="M148.441,31.166a15.583,15.583,0,0,0,0-31.166H132.887V31.166Z" transform="translate(-59.892 0)" fill="#fbc827"/>
+                        <path id="Trazado_61821" data-name="Trazado 61821" d="M31.165,11.621H19.508V0H15.583a15.583,15.583,0,0,0,0,31.166c.033,0,.064,0,.1,0H31.165Z" transform="translate(0 0)" fill="#fbc827"/>
+                        <rect id="Rectángulo_5651" data-name="Rectángulo 5651" width="15.583" height="31.166" transform="translate(56.448)" fill="#fbc827"/>
+                        <path id="Trazado_61822" data-name="Trazado 61822" d="M72.094,19.51a9.755,9.755,0,0,0,0-19.51h-13.6V31.166H81.849v-1.9a9.754,9.754,0,0,0-9.755-9.754" transform="translate(-26.362 0)" fill="#fbc827"/>
+                    </g>
+                </g>
+            </svg>
+            <div class="barra"> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+                </svg>
+            </div>
+            
+            <div class="iconos-search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="navegacion-principal">
+        <div class="enlaces">
+            <a href="#">HOMBRES</a>
+            <a href="#">MUJERES</a>
+            <a href="#">NIÑOS</a>
+            <a href="#">MARCAS</a>
+        </div>
+    </nav>
+
+    <div class="contenido-principal">
+        <aside>
+            <form action="filtro" class="filtro">
+                <h4>MARCA</h4>
+                <label for="nike">
+                    <input type="checkbox" id="nike" placeholder="busca por marca" value="Nike"> <span class="marca-texto">Nike</span>
+                </label>
+                <label for="jordan">
+                    <input type="checkbox" id="jordan" placeholder="busca por marca" value="Jordan"> <span class="marca-texto">Jordan</span>
+                </label>
+                <label for="reebok">
+                    <input type="checkbox" id="reebok" placeholder="busca por marca" value="Reebok"> <span class="marca-texto">Reebok</span>
+                </label>
+                <label for="puma">
+                    <input type="checkbox" id="puma" placeholder="busca por marca" value="Puma"> <span class="marca-texto">Puma</span>
+                </label>
+                <label for="topper">
+                    <input type="checkbox" id="topper" placeholder="busca por marca" value="Topper"> <span class="marca-texto">Topper</span>
+                </label>
+                <label for="asics">
+                    <input type="checkbox" id="asics" placeholder="busca por marca" value="Asics"> <span class="marca-texto">Asics</span>
+                </label>
+                <label for="fila">
+                    <input type="checkbox" id="fila" placeholder="busca por marca" value="Fila"> <span class="marca-texto">Fila</span>
+                </label>                
+                
+            </form>
+
+        </aside>
+
+        <div class="productos">
+            <div class="producto">
+                <img src="src/image/1519604-500-auto.webp" alt="zapatillas">
+                <div class="detalle">
+                    <img src="src/image/logo-nike.webp" alt="logo_nike" class="marca">
+                    <p class="nombre">Zapatillas Nike AIR FORCE 1 '07 LV8</p>
+                    <p class="precio">$239.999</p>
+                    <p class="cuotas">9 <span>cuotas de</span> $ 26.667,00</p>
+                    <p class="envio">ENVÍO GRATIS</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="src/image/1519604-500-auto.webp" alt="zapatillas">
+                <div class="detalle">
+                    <img src="src/image/logo-nike.webp" alt="logo_nike" class="marca">
+                    <p class="nombre">Zapatillas Nike AIR FORCE 1 '07 LV8</p>
+                    <p class="precio">$239.999</p>
+                    <p class="cuotas">9 <span>cuotas de</span> $ 26.667,00</p>
+                    <p class="envio">ENVÍO GRATIS</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="src/image/1519604-500-auto.webp" alt="zapatillas">
+                <div class="detalle">
+                    <img src="src/image/logo-nike.webp" alt="logo_nike" class="marca">
+                    <p class="nombre">Zapatillas Nike AIR FORCE 1 '07 LV8</p>
+                    <p class="precio">$239.999</p>
+                    <p class="cuotas">9 <span>cuotas de</span> $ 26.667,00</p>
+                    <p class="envio">ENVÍO GRATIS</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="src/image/1519604-500-auto.webp" alt="zapatillas">
+                <div class="detalle">
+                    <img src="src/image/logo-nike.webp" alt="logo_nike" class="marca">
+                    <p class="nombre">Zapatillas Nike AIR FORCE 1 '07 LV8</p>
+                    <p class="precio">$239.999</p>
+                    <p class="cuotas">9 <span>cuotas de</span> $ 26.667,00</p>
+                    <p class="envio">ENVÍO GRATIS</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="src/image/1519604-500-auto.webp" alt="zapatillas">
+                <div class="detalle">
+                    <img src="src/image/logo-nike.webp" alt="logo_nike" class="marca">
+                    <p class="nombre">Zapatillas Nike AIR FORCE 1 '07 LV8</p>
+                    <p class="precio">$239.999</p>
+                    <p class="cuotas">9 <span>cuotas de</span> $ 26.667,00</p>
+                    <p class="envio">ENVÍO GRATIS</p>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="src/image/1519604-500-auto.webp" alt="zapatillas">
+                <div class="detalle">
+                    <img src="src/image/logo-nike.webp" alt="logo_nike" class="marca">
+                    <p class="nombre">Zapatillas Nike AIR FORCE 1 '07 LV8</p>
+                    <p class="precio">$239.999</p>
+                    <p class="cuotas">9 <span>cuotas de</span> $ 26.667,00</p>
+                    <p class="envio">ENVÍO GRATIS</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-contenido">
+            <section>
+                <h2>CONTACTO</h2>
+                <form class="formulario" action="https://formspree.io/f/mkgnblyl"
+                method="POST">
+                    <fieldset>
+                        <legend>Llena tus datos y te contactaremos</legend>
+                        <div class="contenedor-campos"> 
+                            <div class="campo">
+                                <label >
+                                    Nombre
+                                    <input class="input-text" type="text" id="Nombre" placeholder="Tu nombre">
+                                </label>
+                            </div>
+
+                            <div class="campo">
+                                <label >
+                                    Teléfono
+                                    <input class="input-text" type="tel" id="Telefono" placeholder="Tu Telefono">
+                                </label>
+                                
+                            </div>
+
+                            <div class="campo">
+                                <label >
+                                    Correo
+                                    <input class="input-text" type="email" id="email" placeholder="Tu email">
+                                </label>
+                            </div>
+                            
+                            <div class="campo">
+                                <label >Mensaje</label>
+                                <textarea class="input-text"></textarea>
+                            </div>
+                        </div>
+                        <div class="alinear-derecha flex">
+                            <input class="boton w-sm-100" type="submit" value="enviar">
+                        </div>
+                        
+                </form>
+            </section>
+            <p>© 2024 Diego Barua todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
